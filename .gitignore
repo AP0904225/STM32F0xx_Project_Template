@@ -5,36 +5,6 @@
 #
 # Normal rules
 #
-.*
-*.o
-*.o.*
-*.a
-*.s
-*.su
-*.mod.c
-*.i
-*.lst
-*.order
-*.elf
-*.swp
-*.bin
-*.patch
-*.cfgtmp
-
-# host programs on Cygwin
-*.exe
-
-# Build tree
-/build-*
-
-#
-# Top-level generic files
-#
-/MLO*
-/SPL*
-/System.map
-/u-boot*
-/boards.cfg
 
 #
 # git files that we don't want to ignore even it they are dot-files
@@ -42,23 +12,8 @@
 !.gitignore
 !.mailmap
 
-#
-# Generated files
-#
-/LOG
-/spl/
-/tpl/
-/defconfig
-
-#
-# Generated include files
-#
-/include/config/
-/include/generated/
-
-# stgit generated dirs
-patches-*
-.stgit-edit.txt
+# Build tree
+/build-*
 
 # quilt's files
 patches
@@ -84,6 +39,8 @@ GTAGS
 *.orig
 *~
 \#*#
+
+*.hex
 Project/*.uvguix.*
 Project/Listings/Template.map
 Project/Objects/SmartLock_Target 1.dep
@@ -100,5 +57,10 @@ Project/Objects/stm32f0xx_it.crf
 Project/Objects/stm32f0xx_it.d
 Project/Objects/system_stm32f0xx.crf
 Project/Objects/system_stm32f0xx.d
+Project/Listings/startup_stm32f030.lst
+Project/Objects/main.o
+Project/Objects/startup_stm32f030.o
+Project/Objects/stm32f0xx_it.o
+Project/Objects/system_stm32f0xx.o
 
 
